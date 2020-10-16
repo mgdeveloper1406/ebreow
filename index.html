@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./node_modules/materialize-css/dist/css/materialize.min.css">
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>LeenGo</title>
+</head>
+
+<body>
+
+  <!-- Difficulty Dropdown -->
+  <ul id="difficulty-dropdown" class="dropdown-content">
+    <li><a href="#!">Easy</a></li>
+    <li><a href="#!">Medium</a></li>
+  </ul>
+  <!-- Focus Dropdown -->
+  <ul id="focus-dropdown" class="dropdown-content">
+    <li><a href="#!">Name</a></li>
+    <li><a href="#!">Equivalent</a></li>
+  </ul>
+
+  <!-- navbar -->
+  <nav>
+    <div class="nav-wrapper teal">
+      <span class="brand-logo left">LeenGo</span>
+      <ul id="nav-mobile" class="right">
+        <li><a href="#!" class="dropdown-trigger" data-target="difficulty-dropdown">Difficulty</a></li>
+        <li><a href="#!" class="dropdown-trigger" data-target="focus-dropdown">Focus</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <div class="container main">
+    <div>
+      <p><b>Streak: </b><span id="streak"></span></p>
+      <p><b>Max Streak: </b><span id="max-streak"></span></p>
+    </div>
+
+    <div class="card">
+      <div class="card-content card-letter">
+        <p class="letter" id="letter"></p>
+      </div>
+      <div class="hints">
+        <!-- <div class="hint" hidden>
+          <p><b>Name:</b></p>
+          <p id="name-input"></p>
+        </div> -->
+        <div class="hint">
+          <p><b>Pronounced:</b></p>
+          <p class="hint-input" id="pronounciation-input"></p>
+        </div>
+        <div class="hint">
+          <p><b>English Equivalent:</b></p>
+          <p class="hint-input" id="transliteration-input"></p>
+        </div>
+      </div>
+      <div class="card-action card-buttons" id="button-div">
+      </div>
+    </div>
+
+  </div>
+
+  <script src="./node_modules/materialize-css/dist/js/materialize.min.js"></script>
+  <script src="./app.js"></script>
+</body>
+
+</html>
